@@ -23,4 +23,5 @@ export const getRandomBibleVerse = async () => {
   if (!window.localStorage) return verseObj;
   verseObj.date = new Date().toLocaleDateString();
   localStorage.setItem('verse', JSON.stringify(verseObj));
+  return verseObj;
 }
